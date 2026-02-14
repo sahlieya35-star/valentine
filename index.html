@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #d6477e;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #b23b63;
+            
+        }
+        .index {
+            margin: 100px auto;
+            width: 50%;
+            background-color: #efa7c9;
+            padding: 20px;
+            border: 2px solid #b23b63;
+            border-radius: 10px;
+            box-shadow: 5 5 10px rgba(0,0,0,0.1);
+        }
+        .index:hover {
+            color: #ff69b4;
+            border-color: #ff69b4;
+            box-shadow: 0 0 30px rgb(59, 3, 31);
+        background-color: black;}
+                /* na3mlou container lel hearts */
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+/* chaque coeur */
+.heart {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(125, 0, 44);
+  transform: rotate(45deg);
+  animation: floatUp linear infinite;
+  opacity: 0.8;
+}
+
+/* forme coeur */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgb(125, 0, 44);
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -7.5px;
+  left: 0;
+}
+
+.heart::after {
+  left: -7.5px;
+  top: 0;
+}
+
+/* animation aléatoire */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+    </style>
+</head>
+<body ><div class="index">
+    <p>dear bestie, i hope that you're good! 
+        If you received this symbolic gift, you should know that you are the most beautiful, most supportive girl I have met in the 20 years I have spent in life. I love you very much, my little judge.
+    hayee yezii ml anglais ahye sahebty lmeziyena 7ebit njareb fik maharaty kawni small developer🙂❤️❤️ 
+enty adhka tofla 3raftha sahebty koun met2akda li bch toussel lelli t7eb alihh el koll b 9odrett raby .</p>
+    </div>
+    </div></div>
+        <div class="hearts">
+            
+  <!-- plusieurs coeurs avec positions aléatoires -->
+  <div class="heart" style="left:5%; animation-duration:6s; animation-delay:0s;"></div>
+  <div class="heart" style="left:15%; animation-duration:8s; animation-delay:2s;"></div>
+  <div class="heart" style="left:25%; animation-duration:5s; animation-delay:1s;"></div>
+  <div class="heart" style="left:35%; animation-duration:7s; animation-delay:3s;"></div>
+  <div class="heart" style="left:45%; animation-duration:6s; animation-delay:0.5s;"></div>
+  <div class="heart" style="left:55%; animation-duration:9s; animation-delay:1.5s;"></div>
+  <div class="heart" style="left:65%; animation-duration:6s; animation-delay:2.5s;"></div>
+  <div class="heart" style="left:75%; animation-duration:8s; animation-delay:0.8s;"></div>
+  <div class="heart" style="left:85%; animation-duration:7s; animation-delay:1.2s;"></div>
+  <div class="heart" style="left:95%; animation-duration:5s; animation-delay:3.5s;"></div>
+</div>
+
+
+
+</body>
+
+</html>

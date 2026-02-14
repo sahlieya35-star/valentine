@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #ffe6f0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* na3mlou container lel hearts */
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+/* chaque coeur */
+.heart {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: red;
+  transform: rotate(45deg);
+  animation: floatUp linear infinite;
+  opacity: 0.8;
+}
+
+/* forme coeur */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -7.5px;
+  left: 0;
+}
+
+.heart::after {
+  left: -7.5px;
+  top: 0;
+}
+
+/* animation aléatoire */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+p {
+  font-size: 30px;
+  color: #ce2f5c;
+ 
+}
+h1 {
+
+  color: #dc1076ec;
+  
+ 
+}
+body {
+  text-align: center;       /* centrer horizontal */
+  margin: 0;                /* enlever margin default */
+  padding: 0;
+  background: #ffe6f0;
+  font-family: Arial, sans-serif;
+}
+button {
+    background-color: #ff69b4;
+  color: rgb(201, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  font-size:large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  border-radius: 5px;
+  border: #aa000b solid 2px;
+}
+.container {
+  display: flex;          /* horizontal layout */
+  justify-content: center; /* centrer horizontal */
+  align-items: center;     /* aligner verticalement */
+  gap: 20px;               /* espace bin les deux */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  display: block;   /* block = espace contrôlable */
+  margin: 0 auto;   /* centrer horizontalement */
+  width: 300px;     /* taille initiale */
+  max-width: 100%;  /* responsive si écran petit */
+}
+.container1 {
+  position: relative;       /* container reference pour children */
+  text-align: center;
+  width: 100%;
+  height: 300px;            /* hauteur fixe */
+}
+
+/* image juste au-dessus de p */
+.container1 img {
+  position: absolute;
+  bottom: 30px;             /* distance entre img et p */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* p fixe en bas du container */
+.container1 p {
+   position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+#index {
+  margin-top: 15%;
+}
+
+
+
