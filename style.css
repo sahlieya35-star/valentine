@@ -60,7 +60,7 @@ body {
   }
 }
 p {
-  font-size: 30px;
+  font-size: 15px;
   color: #ce2f5c;
  
 }
@@ -105,7 +105,7 @@ button {
 img {
   display: block;   /* block = espace contrôlable */
   margin: 0 auto;   /* centrer horizontalement */
-  width: 300px;     /* taille initiale */
+  width: 100px;     /* taille initiale */
   max-width: 100%;  /* responsive si écran petit */
 }
 .container1 {
@@ -134,6 +134,7 @@ img {
 #index {
   margin-top: 15%;
 }
+
 
 
 
